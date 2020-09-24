@@ -1,0 +1,214 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-24T20:06:25.437Z",
+        "line": 11,
+        "name": "TC08_kullanici walmartta urun arar",
+        "description": "",
+        "id": "walmart-urun-arama;tc08-kullanici-walmartta-urun-arar;test-verileri;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14464000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "kullanici \"https://walmart.com\" sayfasina gider",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://walmart.com\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepdefinitions.EbayStepDefinitions.kullanici_sayfasina_gider(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 951000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanici walmart aramaKutusuna \"calculator\" yazar ve arar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"calculator\"",
+                  "offset": 32
+                }
+              ],
+              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_aramaKutusuna_yazar_ve_arar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4303000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "kullanici walmart sonuc sayisini ekrana yazdirir",
+            "match": {
+              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_sonuc_sayisini_ekrana_yazdirir()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@walmart"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-24T20:06:45.168Z",
+        "line": 12,
+        "name": "TC08_kullanici walmartta urun arar",
+        "description": "",
+        "id": "walmart-urun-arama;tc08-kullanici-walmartta-urun-arar;test-verileri;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6206000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "kullanici \"https://walmart.com\" sayfasina gider",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://walmart.com\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepdefinitions.EbayStepDefinitions.kullanici_sayfasina_gider(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 870000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanici walmart aramaKutusuna \"watch\" yazar ve arar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"watch\"",
+                  "offset": 32
+                }
+              ],
+              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_aramaKutusuna_yazar_ve_arar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 745000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "kullanici walmart sonuc sayisini ekrana yazdirir",
+            "match": {
+              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_sonuc_sayisini_ekrana_yazdirir()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@walmart"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-24T20:06:52.995Z",
+        "line": 13,
+        "name": "TC08_kullanici walmartta urun arar",
+        "description": "",
+        "id": "walmart-urun-arama;tc08-kullanici-walmartta-urun-arar;test-verileri;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7508000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "kullanici \"https://walmart.com\" sayfasina gider",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://walmart.com\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepdefinitions.EbayStepDefinitions.kullanici_sayfasina_gider(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8620000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanici walmart aramaKutusuna \"flower\" yazar ve arar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"flower\"",
+                  "offset": 32
+                }
+              ],
+              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_aramaKutusuna_yazar_ve_arar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 585000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "kullanici walmart sonuc sayisini ekrana yazdirir",
+            "match": {
+              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_sonuc_sayisini_ekrana_yazdirir()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@walmart"
+          }
+        ]
+      }
+    ],
+    "name": "Walmart Urun Arama",
+    "description": "",
+    "id": "walmart-urun-arama",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/walmart.feature",
+    "tags": [
+      {
+        "name": "@walmart",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
