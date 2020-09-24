@@ -12,9 +12,10 @@ import org.junit.runner.RunWith;
 
         features = "src/test/resources/features",    // features klasörünün adresini
         glue = "stepdefinitions",      // testlerinin içerisinde olduğu paketin ismi
-        tags = "@ebayarama", // seçtiğiniz tag'a ait testler çalıştırılır.
+        tags = "@bolcom",
 
         dryRun = false
 )
-public class EbayRunner {
+
+public class BolcomRunner {
 }

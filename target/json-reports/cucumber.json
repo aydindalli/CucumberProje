@@ -1,208 +1,272 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-09-24T20:06:25.437Z",
+        "start_timestamp": "2020-09-24T23:40:22.543Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "TC08_gebruiker zoekt een goed op de bolcom",
+        "description": "",
+        "id": "bol.com-arama-yapma;tc08-gebruiker-zoekt-een-goed-op-de-bolcom;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 513000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8542000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "gebruiker gaat op website \"http://bol.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://bol.com\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_gaat_op_website(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1384000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "gebruiker schrijft \"fietsen\" in de zoekdoos",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"fietsen\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_in_de_zoekdoos(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 185000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "gebruiker schrijft de gevolgen op",
+            "match": {
+              "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_de_gevolgen_op()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@bolcom"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-24T23:40:33.325Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
         "line": 11,
-        "name": "TC08_kullanici walmartta urun arar",
+        "name": "TC08_gebruiker zoekt een goed op de bolcom",
         "description": "",
-        "id": "walmart-urun-arama;tc08-kullanici-walmartta-urun-arar;test-verileri;2",
+        "id": "bol.com-arama-yapma;tc08-gebruiker-zoekt-een-goed-op-de-bolcom;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 564000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 14464000000,
+              "duration": 492000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "kullanici \"https://walmart.com\" sayfasina gider",
+            "line": 4,
+            "name": "gebruiker gaat op website \"http://bol.com\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"https://walmart.com\"",
-                  "offset": 10
+                  "val": "\"http://bol.com\"",
+                  "offset": 26
                 }
               ],
-              "location": "stepdefinitions.EbayStepDefinitions.kullanici_sayfasina_gider(java.lang.String)"
+              "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_gaat_op_website(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 951000000,
+              "duration": 1477000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "kullanici walmart aramaKutusuna \"calculator\" yazar ve arar",
+            "line": 5,
+            "name": "gebruiker schrijft \"computer\" in de zoekdoos",
             "match": {
               "arguments": [
                 {
-                  "val": "\"calculator\"",
-                  "offset": 32
+                  "val": "\"computer\"",
+                  "offset": 19
                 }
               ],
-              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_aramaKutusuna_yazar_ve_arar(java.lang.String)"
+              "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_in_de_zoekdoos(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 4303000000,
+              "duration": 246000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "kullanici walmart sonuc sayisini ekrana yazdirir",
+            "line": 6,
+            "name": "gebruiker schrijft de gevolgen op",
             "match": {
-              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_sonuc_sayisini_ekrana_yazdirir()"
+              "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_de_gevolgen_op()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@walmart"
+            "name": "@bolcom"
           }
         ]
       },
       {
-        "start_timestamp": "2020-09-24T20:06:45.168Z",
+        "start_timestamp": "2020-09-24T23:40:36.114Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
         "line": 12,
-        "name": "TC08_kullanici walmartta urun arar",
+        "name": "TC08_gebruiker zoekt een goed op de bolcom",
         "description": "",
-        "id": "walmart-urun-arama;tc08-kullanici-walmartta-urun-arar;test-verileri;3",
+        "id": "bol.com-arama-yapma;tc08-gebruiker-zoekt-een-goed-op-de-bolcom;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 443000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 6206000000,
+              "duration": 641000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "kullanici \"https://walmart.com\" sayfasina gider",
+            "line": 4,
+            "name": "gebruiker gaat op website \"http://bol.com\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"https://walmart.com\"",
-                  "offset": 10
+                  "val": "\"http://bol.com\"",
+                  "offset": 26
                 }
               ],
-              "location": "stepdefinitions.EbayStepDefinitions.kullanici_sayfasina_gider(java.lang.String)"
+              "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_gaat_op_website(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 870000000,
+              "duration": 1363000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "kullanici walmart aramaKutusuna \"watch\" yazar ve arar",
+            "line": 5,
+            "name": "gebruiker schrijft \"tandenborstel\" in de zoekdoos",
             "match": {
               "arguments": [
                 {
-                  "val": "\"watch\"",
-                  "offset": 32
+                  "val": "\"tandenborstel\"",
+                  "offset": 19
                 }
               ],
-              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_aramaKutusuna_yazar_ve_arar(java.lang.String)"
+              "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_in_de_zoekdoos(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 745000000,
+              "duration": 160000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "kullanici walmart sonuc sayisini ekrana yazdirir",
+            "line": 6,
+            "name": "gebruiker schrijft de gevolgen op",
             "match": {
-              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_sonuc_sayisini_ekrana_yazdirir()"
+              "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_de_gevolgen_op()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@walmart"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-09-24T20:06:52.995Z",
-        "line": 13,
-        "name": "TC08_kullanici walmartta urun arar",
-        "description": "",
-        "id": "walmart-urun-arama;tc08-kullanici-walmartta-urun-arar;test-verileri;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 7508000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "kullanici \"https://walmart.com\" sayfasina gider",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"https://walmart.com\"",
-                  "offset": 10
-                }
-              ],
-              "location": "stepdefinitions.EbayStepDefinitions.kullanici_sayfasina_gider(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 8620000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "kullanici walmart aramaKutusuna \"flower\" yazar ve arar",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"flower\"",
-                  "offset": 32
-                }
-              ],
-              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_aramaKutusuna_yazar_ve_arar(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 585000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "kullanici walmart sonuc sayisini ekrana yazdirir",
-            "match": {
-              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_sonuc_sayisini_ekrana_yazdirir()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@walmart"
+            "name": "@bolcom"
           }
         ]
       }
     ],
-    "name": "Walmart Urun Arama",
+    "name": "Bol.com Arama Yapma",
     "description": "",
-    "id": "walmart-urun-arama",
+    "id": "bol.com-arama-yapma",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/walmart.feature",
+    "uri": "file:src/test/resources/features/bolcom.feature",
     "tags": [
       {
-        "name": "@walmart",
+        "name": "@bolcom",
         "type": "Tag",
         "location": {
           "line": 1,

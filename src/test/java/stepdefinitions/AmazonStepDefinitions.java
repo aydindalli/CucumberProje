@@ -3,6 +3,7 @@ package stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.support.ui.Select;
 import pages.AmazonPage;
 import utilities.ConfigurationReader;
 import utilities.Driver;
@@ -34,5 +35,12 @@ public class AmazonStepDefinitions {
     @Given("kullanici aramaKutusuna {string} yazar ve arar")
     public void kullanici_aramaKutusuna_yazar_ve_arar(String string) {
         amazonPage.aramaKutusu.sendKeys(string + Keys.ENTER);
+    }
+
+
+    @Given("kullanici dropdown {string} secer")
+    public void kullanici_dropdown_secer(String string) {
+        Select select=new Select(amazonPage.dropDown);
+        select.selectByVisibleText(string);
     }
 }

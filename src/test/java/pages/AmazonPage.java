@@ -16,4 +16,7 @@ public class AmazonPage {
 
     @FindBy (className = "sg-col-inner")
     public WebElement sonucSayisi;
+
+    @FindBy (id = "searchDropdownBox")
+    public WebElement dropDown;
 }

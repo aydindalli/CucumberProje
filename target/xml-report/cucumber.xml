@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="45.013">
-<testcase classname="Walmart Urun Arama" name="TC08_kullanici walmartta urun arar" time="19.722">
-<system-out><![CDATA[Given kullanici "https://walmart.com" sayfasina gider.......................passed
-And kullanici walmart aramaKutusuna "calculator" yazar ve arar..............passed
-Then kullanici walmart sonuc sayisini ekrana yazdirir.......................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="16.993">
+<testcase classname="Bol.com Arama Yapma" name="TC08_gebruiker zoekt een goed op de bolcom" time="10.771">
+<system-out><![CDATA[Given gebruiker gaat op website "http://bol.com"............................passed
+And gebruiker schrijft "fietsen" in de zoekdoos.............................passed
+Then gebruiker schrijft de gevolgen op......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Walmart Urun Arama" name="TC08_kullanici walmartta urun arar 2" time="7.821">
-<system-out><![CDATA[Given kullanici "https://walmart.com" sayfasina gider.......................passed
-And kullanici walmart aramaKutusuna "watch" yazar ve arar...................passed
-Then kullanici walmart sonuc sayisini ekrana yazdirir.......................passed
+<testcase classname="Bol.com Arama Yapma" name="TC08_gebruiker zoekt een goed op de bolcom 2" time="2.785">
+<system-out><![CDATA[Given gebruiker gaat op website "http://bol.com"............................passed
+And gebruiker schrijft "computer" in de zoekdoos............................passed
+Then gebruiker schrijft de gevolgen op......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Walmart Urun Arama" name="TC08_kullanici walmartta urun arar 3" time="16.713">
-<system-out><![CDATA[Given kullanici "https://walmart.com" sayfasina gider.......................passed
-And kullanici walmart aramaKutusuna "flower" yazar ve arar..................passed
-Then kullanici walmart sonuc sayisini ekrana yazdirir.......................passed
+<testcase classname="Bol.com Arama Yapma" name="TC08_gebruiker zoekt een goed op de bolcom 3" time="2.61">
+<system-out><![CDATA[Given gebruiker gaat op website "http://bol.com"............................passed
+And gebruiker schrijft "tandenborstel" in de zoekdoos.......................passed
+Then gebruiker schrijft de gevolgen op......................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

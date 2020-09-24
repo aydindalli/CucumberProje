@@ -1,176 +1,194 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/walmart.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/bolcom.feature");
 formatter.feature({
-  "name": "Walmart Urun Arama",
+  "name": "Bol.com Arama Yapma",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@walmart"
+      "name": "@bolcom"
     }
   ]
 });
 formatter.scenarioOutline({
-  "name": "TC08_kullanici walmartta urun arar",
+  "name": "TC08_gebruiker zoekt een goed op de bolcom",
   "description": "",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "kullanici \"https://walmart.com\" sayfasina gider",
+  "name": "gebruiker gaat op website \"http://bol.com\"",
   "keyword": "Given "
 });
 formatter.step({
-  "name": "kullanici walmart aramaKutusuna \"\u003ckelime\u003e\" yazar ve arar",
+  "name": "gebruiker schrijft \"\u003cproduct\u003e\" in de zoekdoos",
   "keyword": "And "
 });
 formatter.step({
-  "name": "kullanici walmart sonuc sayisini ekrana yazdirir",
+  "name": "gebruiker schrijft de gevolgen op",
   "keyword": "Then "
 });
 formatter.examples({
-  "name": "Test Verileri",
+  "name": "",
   "description": "",
   "keyword": "Examples",
   "rows": [
     {
       "cells": [
-        "kelime"
+        "product"
       ]
     },
     {
       "cells": [
-        "calculator"
+        "fietsen"
       ]
     },
     {
       "cells": [
-        "watch"
+        "computer"
       ]
     },
     {
       "cells": [
-        "flower"
+        "tandenborstel"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "TC08_kullanici walmartta urun arar",
+  "name": "TC08_gebruiker zoekt een goed op de bolcom",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@walmart"
+      "name": "@bolcom"
     }
   ]
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
-  "name": "kullanici \"https://walmart.com\" sayfasina gider",
+  "name": "gebruiker gaat op website \"http://bol.com\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefinitions.EbayStepDefinitions.kullanici_sayfasina_gider(java.lang.String)"
+  "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_gaat_op_website(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici walmart aramaKutusuna \"calculator\" yazar ve arar",
+  "name": "gebruiker schrijft \"fietsen\" in de zoekdoos",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_aramaKutusuna_yazar_ve_arar(java.lang.String)"
+  "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_in_de_zoekdoos(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici walmart sonuc sayisini ekrana yazdirir",
+  "name": "gebruiker schrijft de gevolgen op",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_sonuc_sayisini_ekrana_yazdirir()"
+  "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_de_gevolgen_op()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "TC08_kullanici walmartta urun arar",
+  "name": "TC08_gebruiker zoekt een goed op de bolcom",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@walmart"
+      "name": "@bolcom"
     }
   ]
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
-  "name": "kullanici \"https://walmart.com\" sayfasina gider",
+  "name": "gebruiker gaat op website \"http://bol.com\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefinitions.EbayStepDefinitions.kullanici_sayfasina_gider(java.lang.String)"
+  "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_gaat_op_website(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici walmart aramaKutusuna \"watch\" yazar ve arar",
+  "name": "gebruiker schrijft \"computer\" in de zoekdoos",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_aramaKutusuna_yazar_ve_arar(java.lang.String)"
+  "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_in_de_zoekdoos(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici walmart sonuc sayisini ekrana yazdirir",
+  "name": "gebruiker schrijft de gevolgen op",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_sonuc_sayisini_ekrana_yazdirir()"
+  "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_de_gevolgen_op()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "TC08_kullanici walmartta urun arar",
+  "name": "TC08_gebruiker zoekt een goed op de bolcom",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@walmart"
+      "name": "@bolcom"
     }
   ]
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
-  "name": "kullanici \"https://walmart.com\" sayfasina gider",
+  "name": "gebruiker gaat op website \"http://bol.com\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefinitions.EbayStepDefinitions.kullanici_sayfasina_gider(java.lang.String)"
+  "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_gaat_op_website(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici walmart aramaKutusuna \"flower\" yazar ve arar",
+  "name": "gebruiker schrijft \"tandenborstel\" in de zoekdoos",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_aramaKutusuna_yazar_ve_arar(java.lang.String)"
+  "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_in_de_zoekdoos(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici walmart sonuc sayisini ekrana yazdirir",
+  "name": "gebruiker schrijft de gevolgen op",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_sonuc_sayisini_ekrana_yazdirir()"
+  "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_de_gevolgen_op()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 });
