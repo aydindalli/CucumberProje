@@ -15,4 +15,7 @@ public class BolcomPage {
 
     @FindBy (className = "js_total_results")
     public WebElement aantalvanProducten;
+
+    @FindBy (xpath = "//button[@data-test='deals-menu']")
+    public WebElement dropDown;
 }

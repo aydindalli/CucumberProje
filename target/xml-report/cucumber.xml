@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="16.993">
-<testcase classname="Bol.com Arama Yapma" name="TC08_gebruiker zoekt een goed op de bolcom" time="10.771">
-<system-out><![CDATA[Given gebruiker gaat op website "http://bol.com"............................passed
-And gebruiker schrijft "fietsen" in de zoekdoos.............................passed
-Then gebruiker schrijft de gevolgen op......................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Bol.com Arama Yapma" name="TC08_gebruiker zoekt een goed op de bolcom 2" time="2.785">
-<system-out><![CDATA[Given gebruiker gaat op website "http://bol.com"............................passed
-And gebruiker schrijft "computer" in de zoekdoos............................passed
-Then gebruiker schrijft de gevolgen op......................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Bol.com Arama Yapma" name="TC08_gebruiker zoekt een goed op de bolcom 3" time="2.61">
-<system-out><![CDATA[Given gebruiker gaat op website "http://bol.com"............................passed
-And gebruiker schrijft "tandenborstel" in de zoekdoos.......................passed
-Then gebruiker schrijft de gevolgen op......................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="97.578">
+<testcase classname="Koalapalace login test case" name="TC10_Valid Credentials Log in" time="96.701">
+<system-out><![CDATA[Given user must visit "http://kaolapalace-qa-environment.com/Account/Logon".passed
+And user must enter a valid username........................................passed
+Then user must enter a valid password.......................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

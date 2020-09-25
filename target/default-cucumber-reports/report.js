@@ -1,65 +1,21 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/bolcom.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/koalapalace.feature");
 formatter.feature({
-  "name": "Bol.com Arama Yapma",
+  "name": "Koalapalace login test case",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@bolcom"
-    }
-  ]
-});
-formatter.scenarioOutline({
-  "name": "TC08_gebruiker zoekt een goed op de bolcom",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "gebruiker gaat op website \"http://bol.com\"",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "gebruiker schrijft \"\u003cproduct\u003e\" in de zoekdoos",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "gebruiker schrijft de gevolgen op",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "product"
-      ]
-    },
-    {
-      "cells": [
-        "fietsen"
-      ]
-    },
-    {
-      "cells": [
-        "computer"
-      ]
-    },
-    {
-      "cells": [
-        "tandenborstel"
-      ]
+      "name": "@KoalaPalace"
     }
   ]
 });
 formatter.scenario({
-  "name": "TC08_gebruiker zoekt een goed op de bolcom",
+  "name": "TC10_Valid Credentials Log in",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
-      "name": "@bolcom"
+      "name": "@KoalaPalace"
     }
   ]
 });
@@ -67,123 +23,31 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "gebruiker gaat op website \"http://bol.com\"",
+  "name": "user must visit \"http://kaolapalace-qa-environment.com/Account/Logon\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_gaat_op_website(java.lang.String)"
+  "location": "stepdefinitions.KoalaPalaceStepDefinitions.user_must_visit(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "gebruiker schrijft \"fietsen\" in de zoekdoos",
+  "name": "user must enter a valid username",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_in_de_zoekdoos(java.lang.String)"
+  "location": "stepdefinitions.KoalaPalaceStepDefinitions.user_must_enter_a_valid_username()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "gebruiker schrijft de gevolgen op",
+  "name": "user must enter a valid password",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_de_gevolgen_op()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "TC08_gebruiker zoekt een goed op de bolcom",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@bolcom"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "gebruiker gaat op website \"http://bol.com\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_gaat_op_website(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "gebruiker schrijft \"computer\" in de zoekdoos",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_in_de_zoekdoos(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "gebruiker schrijft de gevolgen op",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_de_gevolgen_op()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "TC08_gebruiker zoekt een goed op de bolcom",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@bolcom"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "gebruiker gaat op website \"http://bol.com\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_gaat_op_website(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "gebruiker schrijft \"tandenborstel\" in de zoekdoos",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_in_de_zoekdoos(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "gebruiker schrijft de gevolgen op",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_de_gevolgen_op()"
+  "location": "stepdefinitions.KoalaPalaceStepDefinitions.user_must_enter_a_valid_password()"
 });
 formatter.result({
   "status": "passed"

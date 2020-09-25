@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-09-24T23:40:22.543Z",
+        "start_timestamp": "2020-09-25T15:21:29.354Z",
         "before": [
           {
             "result": {
-              "duration": 3000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 10,
-        "name": "TC08_gebruiker zoekt een goed op de bolcom",
+        "line": 3,
+        "name": "TC10_Valid Credentials Log in",
         "description": "",
-        "id": "bol.com-arama-yapma;tc08-gebruiker-zoekt-een-goed-op-de-bolcom;;2",
+        "id": "koalapalace-login-test-case;tc10-valid-credentials-log-in",
         "after": [
           {
             "result": {
-              "duration": 513000000,
+              "duration": 526000000,
               "status": "passed"
             },
             "match": {
@@ -31,242 +31,66 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 8542000000,
+              "duration": 27146000000,
               "status": "passed"
             },
             "line": 4,
-            "name": "gebruiker gaat op website \"http://bol.com\"",
+            "name": "user must visit \"http://kaolapalace-qa-environment.com/Account/Logon\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"http://bol.com\"",
-                  "offset": 26
+                  "val": "\"http://kaolapalace-qa-environment.com/Account/Logon\"",
+                  "offset": 16
                 }
               ],
-              "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_gaat_op_website(java.lang.String)"
+              "location": "stepdefinitions.KoalaPalaceStepDefinitions.user_must_visit(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1384000000,
+              "duration": 226000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "gebruiker schrijft \"fietsen\" in de zoekdoos",
+            "name": "user must enter a valid username",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"fietsen\"",
-                  "offset": 19
-                }
-              ],
-              "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_in_de_zoekdoos(java.lang.String)"
+              "location": "stepdefinitions.KoalaPalaceStepDefinitions.user_must_enter_a_valid_username()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 185000000,
+              "duration": 68655000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "gebruiker schrijft de gevolgen op",
+            "name": "user must enter a valid password",
             "match": {
-              "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_de_gevolgen_op()"
+              "location": "stepdefinitions.KoalaPalaceStepDefinitions.user_must_enter_a_valid_password()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@bolcom"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-09-24T23:40:33.325Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 11,
-        "name": "TC08_gebruiker zoekt een goed op de bolcom",
-        "description": "",
-        "id": "bol.com-arama-yapma;tc08-gebruiker-zoekt-een-goed-op-de-bolcom;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 564000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 492000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "gebruiker gaat op website \"http://bol.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"http://bol.com\"",
-                  "offset": 26
-                }
-              ],
-              "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_gaat_op_website(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1477000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "gebruiker schrijft \"computer\" in de zoekdoos",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"computer\"",
-                  "offset": 19
-                }
-              ],
-              "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_in_de_zoekdoos(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 246000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "gebruiker schrijft de gevolgen op",
-            "match": {
-              "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_de_gevolgen_op()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@bolcom"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-09-24T23:40:36.114Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 12,
-        "name": "TC08_gebruiker zoekt een goed op de bolcom",
-        "description": "",
-        "id": "bol.com-arama-yapma;tc08-gebruiker-zoekt-een-goed-op-de-bolcom;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 443000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 641000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "gebruiker gaat op website \"http://bol.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"http://bol.com\"",
-                  "offset": 26
-                }
-              ],
-              "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_gaat_op_website(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1363000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "gebruiker schrijft \"tandenborstel\" in de zoekdoos",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"tandenborstel\"",
-                  "offset": 19
-                }
-              ],
-              "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_in_de_zoekdoos(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 160000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "gebruiker schrijft de gevolgen op",
-            "match": {
-              "location": "stepdefinitions.BolcomStepDefinitions.gebruiker_schrijft_de_gevolgen_op()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@bolcom"
+            "name": "@KoalaPalace"
           }
         ]
       }
     ],
-    "name": "Bol.com Arama Yapma",
+    "name": "Koalapalace login test case",
     "description": "",
-    "id": "bol.com-arama-yapma",
+    "id": "koalapalace-login-test-case",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/bolcom.feature",
+    "uri": "file:src/test/resources/features/koalapalace.feature",
     "tags": [
       {
-        "name": "@bolcom",
+        "name": "@KoalaPalace",
         "type": "Tag",
         "location": {
           "line": 1,
