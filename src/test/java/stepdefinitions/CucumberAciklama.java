@@ -4,10 +4,15 @@ public class CucumberAciklama {
 
     /*
 
+Test raporlari TESTNG ve CUCUMBER da ayri ayridir.
+Paralel testte tespit edilen hata ayri ayri tekrar yapılır ve sonuç hata ayri ayri gösterilerek raporlastirilir.
+Paralel test, test etmede zaman acisindan ekonomiktir.
+
 JUnit     -> Before, After, BeforeClass, AfterClass, Test, Ignore
 TestNG    -> BeforeSuite, BeforeTest, BeforeGroup, BeforeClass, Befor..
 Cucumber  -> Benzer annotationslar..
-			 En önemli farkı TestNG'den, testlerinizn senaryosunu, feature file adlı dosyada yazıyorsunuz ve oradan methodlar oluşturup çalıştırabiliyorsunuz.
+			 En önemli farkı TestNG'den, testlerinizn senaryosunu, feature file adlı dosyada yazıyorsunuz ve
+			 oradan methodlar oluşturup çalıştırabiliyorsunuz.
 -------------------------------KÜTÜPHANELER--------------------------------
 JUnit     : selenium-java , webdrivermanager , junit
 TestNG    : selenium-java , webdrivermanager , testng

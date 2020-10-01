@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
 
         features = "src/test/resources/features",    // features klasörünün adresini
         glue = "stepdefinitions",      // testlerinin içerisinde olduğu paketin ismi
-        tags = "@KoalaPalace",
+        tags = "@hotelreservationnegativetest11",
         dryRun = false
 )
 public class KoalaPalaceRunner {

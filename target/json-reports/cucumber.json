@@ -3,7 +3,52 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-09-25T15:21:29.354Z",
+        "line": 3,
+        "name": "Koala Palace Admin Giris",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9241000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "kullanici koalapalace admin sayfasina gider",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_koalapalace_admin_sayfasina_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 282000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "kullanici kullaniciadi ve sifresini girer",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_kullaniciadi_ve_sifresini_girer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33006000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanici giris islemini gerceklestirir",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_giris_islemini_gerceklestirir()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-01T12:30:37.858Z",
         "before": [
           {
             "result": {
@@ -15,14 +60,20 @@
             }
           }
         ],
-        "line": 3,
-        "name": "TC10_Valid Credentials Log in",
+        "line": 245,
+        "name": "TC25_kullanici datestarti dateendden sonra girerek olusturur",
         "description": "",
-        "id": "koalapalace-login-test-case;tc10-valid-credentials-log-in",
+        "id": "koala-palace;tc25-kullanici-datestarti-dateendden-sonra-girerek-olusturur",
         "after": [
           {
+            "embeddings": [
+              {
+                "data": "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\u003d\u003d",
+                "mime_type": "image/png"
+              }
+            ],
             "result": {
-              "duration": 526000000,
+              "duration": 1014000000,
               "status": "passed"
             },
             "match": {
@@ -35,62 +86,264 @@
         "steps": [
           {
             "result": {
-              "duration": 27146000000,
+              "duration": 1608000000,
               "status": "passed"
             },
-            "line": 4,
-            "name": "user must visit \"http://kaolapalace-qa-environment.com/Account/Logon\"",
+            "line": 246,
+            "name": "kullanici hotelroomreservation sayfasina gider",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"http://kaolapalace-qa-environment.com/Account/Logon\"",
-                  "offset": 16
-                }
-              ],
-              "location": "stepdefinitions.KoalaPalaceStepDefinitions.user_must_visit(java.lang.String)"
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservation_sayfasina_gider()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 226000000,
+              "duration": 188000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "user must enter a valid username",
+            "line": 247,
+            "name": "kullanici roomreservation iduser bolumunde \"manager2\" secer",
             "match": {
-              "location": "stepdefinitions.KoalaPalaceStepDefinitions.user_must_enter_a_valid_username()"
+              "arguments": [
+                {
+                  "val": "\"manager2\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_iduser_bolumunde_secer(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 68655000000,
+              "duration": 166000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "user must enter a valid password",
+            "line": 248,
+            "name": "kullanici roomreservation idhotelroom bolumunde \"Hilton\" secer",
             "match": {
-              "location": "stepdefinitions.KoalaPalaceStepDefinitions.user_must_enter_a_valid_password()"
+              "arguments": [
+                {
+                  "val": "\"Hilton\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_idhotelroom_bolumunde_secer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 115000000,
+              "status": "passed"
+            },
+            "line": 249,
+            "name": "kullanici roomreservation price bolumune \"500\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"500\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_price_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 277000000,
+              "status": "passed"
+            },
+            "line": 250,
+            "name": "kullanici roomreservation datestart bolumune \"10/30/2020\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/30/2020\"",
+                  "offset": 45
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_datestart_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 242000000,
+              "status": "passed"
+            },
+            "line": 251,
+            "name": "kullanici roomreservation dateend bolumune \"10/5/2020\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/5/2020\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_dateend_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 167000000,
+              "status": "passed"
+            },
+            "line": 252,
+            "name": "kullanici roomreservation adultamaount bolumune \"2\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_adultamaount_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 119000000,
+              "status": "passed"
+            },
+            "line": 253,
+            "name": "kullanici roomreservation childrenamount bolumune \"3\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_childrenamount_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 175000000,
+              "status": "passed"
+            },
+            "line": 254,
+            "name": "kullanici roomreservation namesurname bolumune \"Hamza Yılmaz\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hamza Yılmaz\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_namesurname_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 134000000,
+              "status": "passed"
+            },
+            "line": 255,
+            "name": "kullanici roomreservation phone bolumune \"0500600700\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0500600700\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_phone_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 149000000,
+              "status": "passed"
+            },
+            "line": 256,
+            "name": "kullanici roomreservation email bolumune \"hamza@gmail.com\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hamza@gmail.com\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_email_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 191000000,
+              "status": "passed"
+            },
+            "line": 257,
+            "name": "kullanici roomreservation notes bolumune \"Testerlardan selam..\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Testerlardan selam..\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_notes_bolumune_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 132000000,
+              "status": "passed"
+            },
+            "line": 258,
+            "name": "kullanici roomreservation save butonuna tiklar",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_save_butonuna_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//label[@class\u003d\u0027error\u0027]\"}\n  (Session info: chrome\u003d85.0.4183.121)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-N8MJ6HR\u0027, ip: \u0027192.168.43.131\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\\Users\\HP\\AppData\\Local\\T...}, goog:chromeOptions: {debuggerAddress: localhost:55148}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 1cdf87d8a9d1e15066ae99cfd1e68bee\n*** Element info: {Using\u003dxpath, value\u003d//label[@class\u003d\u0027error\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy16.getText(Unknown Source)\r\n\tat stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_kayit_isleminin_basarisiz_oldugunu_assert_eder(KoalaPalaceStepDef.java:236)\r\n\tat ✽.kullanici roomreservation kayit isleminin basarisiz oldugunu assert eder(file:///C:/Users/HP/IdeaProjects/CucumberProje/src/test/resources/features/koalapalace.feature:259)\r\n",
+              "duration": 10070000000,
+              "status": "failed"
+            },
+            "line": 259,
+            "name": "kullanici roomreservation kayit isleminin basarisiz oldugunu assert eder",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_roomreservation_kayit_isleminin_basarisiz_oldugunu_assert_eder()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@KoalaPalace"
+            "name": "@koalapalace"
+          },
+          {
+            "name": "@hotelreservationcreate"
+          },
+          {
+            "name": "@hotelreservationnegativetests"
+          },
+          {
+            "name": "@hotelreservationnegativetest11"
           }
         ]
       }
     ],
-    "name": "Koalapalace login test case",
+    "name": "Koala Palace",
     "description": "",
-    "id": "koalapalace-login-test-case",
+    "id": "koala-palace",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/koalapalace.feature",
     "tags": [
       {
-        "name": "@KoalaPalace",
+        "name": "@koalapalace",
         "type": "Tag",
         "location": {
           "line": 1,
